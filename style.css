@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;        
+}
+body::-webkit-scrollbar-thumb {
+  background-color: blue; 
+  border-radius: 20px;       
+}
+.container{
+  z-index: 100000;
+}
+.wrapper{
+  white-space: pre-wrap;
+}
+.botonera{
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+.botonera div i,
+.botonera div svg{
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--col);
+  transition: 0.25s;
+}
+.botonera div i:hover,
+.botonera div svg:hover{
+  transform: translateY(-8px);
+  text-shadow: 0 0 15px var(--col);
+}
+.hide {
+  display: none;
+}
+.wrap-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 190px;
+  display: inline-block;
+}
+.show {
+  display: inline-block !important;
+}
+.wrap-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 190px;
+  display: inline-block;
+}
+section{
+  position: relative;
+  background: #161623;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section::before{
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(#ffc107, #e91e63);
+  border-radius: 50%;
+  transform: translate(-250px, -120px);
+}
+section::after{
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(#2196f3, #31ff38);
+  border-radius: 50%;
+  transform: translate(250px, 120px);
+}
+/* .box{
+  position: relative;
+  min-width: 250px;
+  min-height: 300px;
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 25px 45px rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  z-index: 10;
+  padding: 20px;
+  backdrop-filter: blur(25px);
+}
+.bgCristal{
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 25px 45px rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(25px);
+}
+.Fo{
+  font-size: 1.3em;
+} */
